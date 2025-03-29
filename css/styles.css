@@ -1,0 +1,231 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #0d2b5a, #000000);
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo-container {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #cccccc;
+    max-width: 400px;
+    font-size: 16px;
+}
+
+/* Estilos de las secciones */
+section {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Estilos de los enlaces sociales */
+.social-links {
+    width: 100%;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: opacity 0.3s, transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.social-link:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.social-link i {
+    font-size: 18px;
+}
+
+/* Colores de los enlaces sociales */
+.website {
+    background-color: #2c3e50;
+}
+.instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.facebook {
+    background-color: #1877f2;
+}
+
+.youtube {
+    background-color: #ff0000;
+}
+
+.threads {
+    background-color: #000000;
+}
+
+.email {
+    background-color: #555555;
+}
+
+.location {
+    background-color: #4caf50;
+}
+
+/* Estilos de los horarios */
+.schedule {
+    width: 100%;
+}
+
+.schedule-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.schedule-item {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.schedule-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.day {
+    font-weight: 500;
+}
+
+.level {
+    font-size: 12px;
+    background-color: #1a56db;
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+
+.time {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #999999;
+    font-size: 14px;
+}
+
+.motto {
+    margin-top: 5px;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    .logo-container {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Para pantallas más grandes */
+@media (min-width: 1200px) {
+    .links-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
