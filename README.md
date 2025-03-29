@@ -1,4 +1,4 @@
-# Linktree para Academia de Taekwondo ITF
+# Linktree Taekwondo GEBA
 
 Un sitio web tipo Linktree personalizado para la escuela Taekwondo ITF GEBA, creado con HTML, CSS y JavaScript puro. Este proyecto proporciona una página web sencilla pero efectiva que muestra enlaces a redes sociales, información de contacto, horarios de clases y más.
 
